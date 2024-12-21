@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Znamenny+Musical+Notation&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+:root{
+    --dark-blue:#11141a;
+    --navy:#03346E;
+    --teal-400:#26A69A;
+    --light-teal:#0ef;
+    --mint:#79D7BE;
+    --blue-300:#64B5F6;
+    --cream:#E2E2B6;
+    --dark-background: #191919;  
+    --light-grey: #B0B0B0;       
+    --medium-grey: #6B6B6B;      
+    --dark-grey: #333333;       
+    --charcoal: #444444;        
+    --white: #EAEAEA;   
+    --background-color: #202123; /* Dark grey background */
+    --primary-text-color: #E8E6E3; /* Light grey text for contrast */
+    --secondary-text-color: #A8A8A8; /* Medium grey for secondary text */
+    --accent-color: #10A37F; /* Teal accent for interactive elements */
+    --border-color: #3C3C3C; /* Dark grey for borders and dividers */
+    --hover-background-color: #2A2B2D; /* Slightly lighter grey for hover states */
+    --input-background-color: #3C3F41; /* Dark grey for input fields */
+    --input-text-color: #E8E6E3; /* Light grey text in input fields */
+            
+}
+
+body{
+    background: var(--dark-blue);
+}
+section{
+    color: var(--teal);
+}
+.list{
+    color: #59C1BD;
+    display: inline;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--blue-300);
+    text-decoration: none;
+    font-family: monospace;
+}
+
+nav a{
+    font-size: 14px;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+nav a.active{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--blue-300);
+}
+nav a:hover{
+    color: var(--blue-300);
+}
+section{
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+section:nth-child(odd){
+    background-color: var(--hover-background-color);
+}
+#home {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 60px 50px; /* Add padding for spacing */
+    background-color: var(--background-color, #333); /* Example background color */
+}
+
+.intro {
+    width: 50%;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center;
+    color: var(--white);
+}
+
+#home h2 {
+    font-size: 30px;
+    color: var(--blue-300);
+    margin: 0; /* Remove default margin */
+}
+
+#home p {
+    color: var(--white);
+    font-size: 20px;
+    margin: 10px 0; /* Adjust margin for spacing between paragraphs */
+}
+
+.profile-img {
+    width: 50%; /* Set width to match intro */
+    display: flex;
+    justify-content: center; /* Center the image area */
+}
+
+.img-area {
+    max-width: 300px; /* Set max width for the image area */
+    overflow: hidden; /* Hide overflow if the image exceeds bounds */
+    border-radius: 20px;
+}
+
+.img-area img {
+    width: 100%; /* Ensure image fills the area */
+    height: auto; /* Maintain aspect ratio */
+
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    width: 70%;
+}
+.about p{
+    font-size: 20px;
+    color: var(--white);
+}
+#skills{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.skills{
+width: 80%;
+}
+.skills h2{
+    font-size: 30px;
+    color: var(--blue-300);
+    margin-bottom: 20px;
+}
+.skills p{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.skills span{
+    color: var(--blue-300);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .projects{
+    width: 80%;
+    }
+    .projects h2{
+        font-size: 30px;
+        color: var(--blue-300);
+        margin-bottom: 30px;
+    }
+    .projects p{
+        font-size: 20px;
+        color: var(--white);
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .projects span{
+        color: var(--blue-300);
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+#portfolio {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 50px 0px;
+}
+.project-container {
+    margin: 10px; 
+    cursor: pointer;
+}
+.project-photo {
+    max-width: 300px; 
+    min-height: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.project-title {
+    margin-right: 40px;
+    font-size: 14px; 
+    color: var(--blue-300);
+}
+.project-title-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0ef; */
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    width: 80%;
+    text-align: center;
+}
+.contact h2{
+    font-size: 30px;
+    color: var(--blue-300);
+    margin-bottom: 30px;
+    
+}
+.contact-info p {
+    margin: 10px 0; /* Add spacing between contact items */
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+.contact-info p span{
+    color: var(--blue-300);
+    font-weight: 600;
+}
+.contact-info a {
+    color: var(--white); /* Change link color */
+    text-decoration: none; /* Remove underline from links */
+}
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.git{
+    font-size: 35px;
+    color: var(--white);
+}
+.project-title-logo a{
+    text-align: center;
+}
+::-webkit-scrollbar{
+    background-color: var(--charcoal);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: var(--blue-300);
+    height: 50px;
+}
