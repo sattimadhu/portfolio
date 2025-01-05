@@ -15,3 +15,8 @@ window.onscroll = () => {
         }
     });
 };
+let menu=document.querySelector('.menu');
+menu.addEventListener('click',function(){
+    let navBar=document.querySelector('nav');
+    navBar.classList.toggle("active");
+})
