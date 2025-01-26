@@ -35,13 +35,18 @@ body{
 }
 section{
     color: var(--teal);
+    padding-top: 50px;
 }
 .list{
     color: #59C1BD;
     display: inline;
 }
+#home{
+    position: absolute;
+    top: 50px;
+}
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -273,10 +278,10 @@ footer{
     padding: 0px 100px;
 }
 .rights{
-    margin-left: 100px;
+    /* margin-left: 10px; */
     font-size: 16px;
     text-decoration: underline;
-    width: 50%;
+    width: auto;
 }
 .social-links{
     width: 25%;
@@ -322,9 +327,9 @@ footer{
     background-color: var(--blue-300);
     height: 50px;
 }
-@media only screen and (max-width:1320px){
+/* @media only screen and (max-width:1320px){
     header{
-        padding: 20 50px;
+        padding: 20 20px;
     }
 }
 @media only screen and (max-width:1100px){
@@ -372,4 +377,125 @@ footer{
     nav ul li a{
         margin-bottom: 10px;
     }
+    #home{
+        font-size: 5px;
+    }
+} */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    nav{
+        position: absolute;
+        height: 0px;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        transition: 0.5s;
+        background-color: var(--background-color);
+        overflow: hidden;
+    }
+    nav.active{
+        height: 100px;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 50px;
+    }
+
+  }
+  @media only screen and (max-width: 480px) {
+    header{
+        padding: 45px 0;
+    }
+    nav{
+        position: absolute;
+        height: 0px;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        transition: 0.3s;
+        background-color: var(--background-color);
+        overflow: hidden;
+        text-align: center;
+    }
+    nav.active{
+        height: 250px;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 50px;
+    }
+    nav ul{
+        width: fit-content;
+        margin: 70px auto 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        position: absolute;
+        left: 80px;
+    }
+    
+#home h2 {
+    font-size: 25px;
+    color: var(--blue-300);
+    margin: 0; /* Remove default margin */
 }
+
+#home p {
+    color: var(--white);
+    font-size: 18px;
+    margin: 10px 0; /* Adjust margin for spacing between paragraphs */
+}
+.intro{
+    width: 100%;
+}
+.profile-img {
+    width: 50%; /* Set width to match intro */
+    display: flex;
+    justify-content: center; /* Center the image area */
+    position: absolute;
+    top: 50px;
+    left: 25%;
+}
+section{
+    font-size: 18px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.rights{
+    /* background: red; */
+    font-size: 12px;
+    width: 100%;
+}
+.social-link{
+    margin: 10px;
+}
+
+footer{
+    background-color: var(--background-color);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--blue-300);
+    padding: 50px 100px;
+    text-align: center;
+}
+.social-links{
+    justify-content: center;
+    /* background-color: green; */
+    width: 100%;
+}
+section p{
+    font-size: 18px;
+}
+  }
+  
