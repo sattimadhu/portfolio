@@ -442,7 +442,7 @@ footer{
     }
     
 #home h2 {
-    font-size: 25px;
+    font-size: 30px;
     color: var(--blue-300);
     margin-top: 250px; /* Remove default margin */
 }
@@ -462,7 +462,7 @@ footer{
     position: absolute;
     top: 50px;
     left: 25%;
-    background: red;
+    /* background: red; */
 }
 section{
     font-size: 18px;
@@ -495,7 +495,13 @@ footer{
     /* background-color: green; */
     width: 100%;
 }
-section p{
+.about p{
+    font-size: 18px;
+}
+.skills p{
+    font-size: 18px;
+}
+#projects p{
     font-size: 18px;
 }
   }
