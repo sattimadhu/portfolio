@@ -43,10 +43,10 @@ section{
 }
 #home{
     position: absolute;
-    top: 50px;
+    top: 0px;
 }
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -427,7 +427,7 @@ footer{
         display: block;
         cursor: pointer;
         position: absolute;
-        right: 50px;
+        right: 100px;
     }
     nav ul{
         width: fit-content;
@@ -444,7 +444,7 @@ footer{
 #home h2 {
     font-size: 25px;
     color: var(--blue-300);
-    margin: 0; /* Remove default margin */
+    margin-top: 250px; /* Remove default margin */
 }
 
 #home p {
@@ -462,6 +462,7 @@ footer{
     position: absolute;
     top: 50px;
     left: 25%;
+    background: red;
 }
 section{
     font-size: 18px;
